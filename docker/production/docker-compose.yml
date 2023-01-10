@@ -29,12 +29,12 @@ services:
       ## E.g. you can change ./config:/root/.stash to ./stash:/root/.stash
       
       ## Keep configs, scrapers, and plugins here.
-      - ./config:/root/.stash
+      - /home/patrick/docker/stashapp/config:/root/.stash
       ## Point this at your collection.
-      - /media/patrick/DATA/adult:/data
+      - /media/adult:/data
       ## This is where your stash's metadata lives
-      - /media/patrick/DATA/adult/metadata:/metadata
+      - /home/patrick/docker/stashapp/metadata:/metadata
       ## Any other cache content.
-      - /media/patrick/DATA/adult/cache:/cache
+      - /home/patrick/docker/stashapp/cache:/cache
       ## Where to store generated content (screenshots,previews,transcodes,sprites)
-      - /media/patrick/DATA/adult/generated:/generated
+      - /home/patrick/docker/stashapp/config/generated:/generated
